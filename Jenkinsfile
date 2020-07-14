@@ -21,10 +21,19 @@ pipeline {
         }
 
 
-        stage ('Deployment Stage') {
+        stage ('Packing Stage') {
             steps {
                 withMaven(maven : 'maven_3_6_3') {
                     bat 'mvn package'
+                }
+            }
+        }
+        
+                
+        stage ('Deployment Stage') {
+            steps {
+                withMaven(maven : 'maven_3_6_3') {
+                    bat 'mvn tomcat7:redeploy'
                 }
             }
         }
