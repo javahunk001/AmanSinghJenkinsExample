@@ -4,6 +4,12 @@ import java.util.List;
 
 import com.servlet.dto.ProfileDTO;
 
+/**
+ * 
+ * @author javahunk
+ * 
+ *
+ */
 public interface ProfileDao {
 	void deleteByUsername(String pusername);
 	ProfileDTO authUser(String pusername, String ppassword);
