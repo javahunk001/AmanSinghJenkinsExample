@@ -16,21 +16,18 @@ import com.servlet.dto.ProfileDTO;
 @WebServlet("/ajaxSearchProfile")
 public class AjaxSearchProfileServlet extends HttpServlet {
 
-
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String email = req.getParameter("email");
 		ProfileDao profileDao = new ProfileDaoImpl();
 		ProfileDTO profileDTO = profileDao.findByEmail(email);
 
+		resp.setContentType("application/json");
 
-		resp.setContentType("application/json");// MIME type
-
-		// convert object into JSON
 		Gson gson = new Gson();
 		String jsonData = gson.toJson(profileDTO);
 		System.out.println(jsonData);
-		
+
 		resp.getWriter().println(jsonData);
 	}
 
