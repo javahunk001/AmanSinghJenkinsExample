@@ -23,15 +23,14 @@ public class AjaxSearchProfileServlet extends HttpServlet {
 		ProfileDao profileDao = new ProfileDaoImpl();
 		ProfileDTO profileDTO = profileDao.findByEmail(email);
 
-		// text/html
+
 		resp.setContentType("application/json");// MIME type
 
 		// convert object into JSON
 		Gson gson = new Gson();
 		String jsonData = gson.toJson(profileDTO);
 		System.out.println(jsonData);
-		// Writing JSON String data into response
-		// and sending back to the caller
+		
 		resp.getWriter().println(jsonData);
 	}
 
