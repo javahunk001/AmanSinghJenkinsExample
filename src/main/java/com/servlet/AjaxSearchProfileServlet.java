@@ -13,7 +13,7 @@ import com.dao.ProfileDaoImpl;
 import com.google.gson.Gson;
 import com.servlet.dto.ProfileDTO;
 
-@WebServlet("/ajaxSearchProfile")
+@WebServlet("/ajaxSearchProfiles")
 public class AjaxSearchProfileServlet extends HttpServlet {
 
 	@Override
