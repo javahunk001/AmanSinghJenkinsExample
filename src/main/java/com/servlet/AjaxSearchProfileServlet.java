@@ -21,7 +21,7 @@ public class AjaxSearchProfileServlet extends HttpServlet {
 		String email = req.getParameter("email");
 		ProfileDao profileDao = new ProfileDaoImpl();
 		ProfileDTO profileDTO = profileDao.findByEmail(email);
-
+System.out.println("fjhgdsjhfjhfgdfjhd");
 		resp.setContentType("application/json");
 
 		Gson gson = new Gson();
