@@ -25,7 +25,7 @@ public class AjaxSearchProfileServlet extends HttpServlet {
 
 		// text/html
 		resp.setContentType("application/json");// MIME type
-System.out.println("this");
+
 		// convert object into JSON
 		Gson gson = new Gson();
 		String jsonData = gson.toJson(profileDTO);
