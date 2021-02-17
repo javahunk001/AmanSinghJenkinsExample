@@ -61,12 +61,7 @@
 	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	 </header>
 	
-	kfgajhgfjagfjhgasjfhba
-	
-	djhfgjagdfhjg
-	
-	
-	kadgfjagjshd
+
 	
 	<div  class="container">
 	     <hr style="border-top: 5px solid rgba(103,58,183,1);"/>
