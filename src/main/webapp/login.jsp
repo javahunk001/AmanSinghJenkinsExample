@@ -62,7 +62,7 @@
 	 </header>
 	
 
-	code changed
+	Running tomacat from jenkins
 	<div  class="container">
 	     <hr style="border-top: 5px solid rgba(103,58,183,1);"/>
 		<img id="studentImage"  src="img/student.png" class="semere"  style="height: 200px;">
